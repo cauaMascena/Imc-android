@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_light"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/maquina_de_esteira.png"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMC"
+        android:textSize="48sp"
+        android:textColor="#E80553"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso:"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="24dp"/>
+    <EditText
+        android:id="@+id/edit_text_peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:maxLines="1"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:hint="Me conte seu peso"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altura: "
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="24dp"/>
+    <EditText
+        android:id="@+id/edit_text_altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        android:hint="Me conte sua altura"/>
+    <Button
+        android:id="@+id/button_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="48dp"
+        android:text="Calcular IMC"/>
+    <TextView
+        android:id="@+id/text_view_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:textSize="64sp"
+        android:textColor="@color/white"/>
+</LinearLayout>
